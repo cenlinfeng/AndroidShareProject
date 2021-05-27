@@ -1,2 +1,3 @@
+include ':studentmanager'
 include ':app'
 rootProject.name = "Projuect"
