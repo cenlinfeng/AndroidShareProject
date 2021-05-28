@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".App"
         android:theme="@style/Theme.Projuect">
         <activity android:name=".view.MainActivity">
             <intent-filter>
@@ -16,6 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.AddTeacherActivity" />
+        <activity android:name=".view.TeacherManagerActivity" />
+        <activity android:name=".view.ManagerActivity" />
     </application>
 
 </manifest>

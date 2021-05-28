@@ -1,9 +1,11 @@
 package com.cenlinfeng.studentmanager.bean;
 
+import java.io.Serializable;
+
 /**
  * 老师类
  */
-public class Teacher {
+public class Teacher implements Serializable {//实现序列化，方便Activity中传输
     private String account;//账号
     private String password;//密码
     private String name;//老师名字

@@ -1,5 +1,6 @@
 package com.cenlinfeng.studentmanager.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etAccount = findViewById(R.id.et_account);
         etPassword = findViewById(R.id.et_password);
         btnLogin = findViewById(R.id.btn_login);
+
+        btnLogin.setOnClickListener(this);
+
     }
 
     @Override
@@ -57,10 +61,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
             //管理员账号登录，跳转管理员界面
+            Intent intent = new Intent(this, ManagerActivity.class);
+            startActivity(intent);
             return;
         }
         //老师登录，查询教师列表
-
 
 
         //学生登录，查询学生列表

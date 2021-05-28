@@ -3,10 +3,12 @@ package com.cenlinfeng.studentmanager;
 import android.app.Application;
 
 import com.cenlinfeng.studentmanager.util.DB;
+import com.cenlinfeng.studentmanager.util.DBHelper;
 
-public class App extends Application {
+public class App extends Application {//需要在AndroidManifest.xml文件设置android:name=".App"
 
-    public static DB db;
+    private static DB db;
+    private static DBHelper dbHelper;
 
     @Override
     public void onCreate() {
@@ -18,6 +20,13 @@ public class App extends Application {
 
     public static DB getDb() {
         return db;
+    }
+
+    public static DBHelper getDbHelper() {
+        if (dbHelper == null) {
+            dbHelper = new DBHelper();
+        }
+        return dbHelper;
     }
 
 
