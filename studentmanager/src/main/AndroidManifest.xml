@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cenlinfeng.studentmanager">
+    package="com.android.studentmanager">
 
     <application
         android:allowBackup="true"
@@ -8,18 +8,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".App"
+        android:name="com.android.studentmanager.App"
         android:theme="@style/Theme.Projuect">
-        <activity android:name=".view.MainActivity">
+        <activity android:name="com.android.studentmanager.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.AddTeacherActivity" />
-        <activity android:name=".view.TeacherManagerActivity" />
-        <activity android:name=".view.ManagerActivity" />
+        <activity android:name="com.android.studentmanager.view.AddTeacherActivity" />
+        <activity android:name="com.android.studentmanager.view.TeacherManagerActivity" />
+        <activity android:name="com.android.studentmanager.view.ManagerActivity" />
     </application>
 
 </manifest>
